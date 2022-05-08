@@ -135,8 +135,12 @@
                   <a name="checkLogo">
                   </a> <!-- checkLogo -->
                   <span class="method-name">checkLogo</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;PageObjects.homePage.logoValidate()&quot; because &quot;this.home&quot; is null
-	at amazonTest.Homepage.homePageTest.checkLogo(homePageTest.java:14)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at PageObjects.homePage.logoValidate(homePage.java:56)
+	at amazonTest.Homepage.homePageTest.checkLogo(homePageTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,8 +178,12 @@
                   <a name="searchProduct">
                   </a> <!-- searchProduct -->
                   <span class="method-name">searchProduct</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;PageObjects.homePage.search(String)&quot; because &quot;this.home&quot; is null
-	at amazonTest.Homepage.homePageTest.searchProduct(homePageTest.java:21)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at PageObjects.homePage.search(homePage.java:41)
+	at amazonTest.Homepage.homePageTest.searchProduct(homePageTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -213,7 +221,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/xz/901yfw1n5j75_7_f7ks4hpg80000gn/T/testng-eclipse--209218462/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/xz/901yfw1n5j75_7_f7ks4hpg80000gn/T/testng-eclipse-854476293/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -266,16 +274,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkLogo')
 data.setCell(0, 2, 'amazonTest.Homepage.homePageTest')
-data.setCell(0, 3, 18);
+data.setCell(0, 3, 10);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchProduct')
 data.setCell(1, 2, 'amazonTest.Homepage.homePageTest')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 4);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 ms</span>
+              <span class="suite-total-time">Total running time: 14 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -302,33 +310,37 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">amazonTest.Homepage.homePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkLogo</span>
-                <span class="method-start">15079 ms</span>
+                <span class="method-start">9007 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15108 ms</span>
+                <span class="method-start">9023 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">15249 ms</span>
+                <span class="method-start">9212 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchProduct</span>
-                <span class="method-start">25043 ms</span>
+                <span class="method-start">14766 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25053 ms</span>
+                <span class="method-start">14774 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

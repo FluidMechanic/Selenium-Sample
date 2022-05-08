@@ -5,6 +5,7 @@
     <classes>
       <class name="amazonTest.Homepage.homePageTest">
         <methods>
+          <include name="setUp"/>
           <include name="checkLogo"/>
           <include name="tearDown"/>
           <include name="searchProduct"/>

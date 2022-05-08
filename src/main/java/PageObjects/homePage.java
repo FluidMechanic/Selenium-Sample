@@ -10,7 +10,6 @@ import amazonTest.Homepage.baseClass;
 
 public class homePage extends baseClass {
 	
-	WebDriver driver;
 	
 	@FindBy(xpath="//input[contains(@id,'twotabsearchtextbox')]")
 	WebElement searchBar;
@@ -30,10 +29,9 @@ public class homePage extends baseClass {
 	@FindBy(xpath="//a[contains(@id,'nav-logo-sprites')]")
 	WebElement amazonLogo;
 	
-	homePage(WebDriver driver)
+	public homePage(WebDriver driver)
 	{
-	
-		this.driver=driver;
+		//this.driver=driver;
 		PageFactory.initElements(driver,this);
 		
 	}

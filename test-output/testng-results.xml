@@ -20,12 +20,16 @@
       <![CDATA[--Test Execution has been completed.Closing the Application--]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-05-05T22:14:07 IST" name="Default suite" finished-at="2022-05-05T22:14:33 IST" duration-ms="25227">
+  <suite started-at="2022-05-07T13:15:16 IST" name="Default suite" finished-at="2022-05-07T13:15:31 IST" duration-ms="14997">
     <groups>
     </groups>
-    <test started-at="2022-05-05T22:14:07 IST" name="Default test" finished-at="2022-05-05T22:14:33 IST" duration-ms="25227">
+    <test started-at="2022-05-07T13:15:16 IST" name="Default test" finished-at="2022-05-07T13:15:31 IST" duration-ms="14997">
       <class name="amazonTest.Homepage.homePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:amazonTest.Homepage.homePageTest@1fe20588]" started-at="2022-05-05T22:14:07 IST" name="setup" finished-at="2022-05-05T22:14:22 IST" duration-ms="15077" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:16 IST" name="setUp" finished-at="2022-05-07T13:15:16 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:16 IST" name="setup" finished-at="2022-05-07T13:15:25 IST" duration-ms="8911" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[----Applictaion is being setup for the execution---]]>
@@ -35,14 +39,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkLogo()[pri:0, instance:amazonTest.Homepage.homePageTest@1fe20588]" started-at="2022-05-05T22:14:22 IST" name="checkLogo" finished-at="2022-05-05T22:14:22 IST" duration-ms="18" status="FAIL">
+        <test-method signature="checkLogo()[pri:0, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:25 IST" name="checkLogo" finished-at="2022-05-07T13:15:25 IST" duration-ms="10" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "PageObjects.homePage.logoValidate()" because "this.home" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "PageObjects.homePage.logoValidate()" because "this.home" is null
-at amazonTest.Homepage.homePageTest.checkLogo(homePageTest.java:14)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at PageObjects.homePage.logoValidate(homePage.java:56)
+at amazonTest.Homepage.homePageTest.checkLogo(homePageTest.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,14 +85,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:amazonTest.Homepage.homePageTest@1fe20588]" started-at="2022-05-05T22:14:22 IST" name="tearDown" finished-at="2022-05-05T22:14:23 IST" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:25 IST" name="tearDown" finished-at="2022-05-07T13:15:25 IST" duration-ms="187" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[--Test Execution has been completed.Closing the Application--]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:amazonTest.Homepage.homePageTest@1fe20588]" started-at="2022-05-05T22:14:23 IST" name="setup" finished-at="2022-05-05T22:14:32 IST" duration-ms="9794" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:25 IST" name="setup" finished-at="2022-05-07T13:15:31 IST" duration-ms="5554" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[----Applictaion is being setup for the execution---]]>
@@ -94,14 +102,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchProduct()[pri:1, instance:amazonTest.Homepage.homePageTest@1fe20588]" started-at="2022-05-05T22:14:32 IST" name="searchProduct" finished-at="2022-05-05T22:14:32 IST" duration-ms="2" status="FAIL">
+        <test-method signature="searchProduct()[pri:1, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:31 IST" name="searchProduct" finished-at="2022-05-07T13:15:31 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "PageObjects.homePage.search(String)" because "this.home" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "PageObjects.homePage.search(String)" because "this.home" is null
-at amazonTest.Homepage.homePageTest.searchProduct(homePageTest.java:21)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+at PageObjects.homePage.search(homePage.java:41)
+at amazonTest.Homepage.homePageTest.searchProduct(homePageTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -136,7 +148,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:amazonTest.Homepage.homePageTest@1fe20588]" started-at="2022-05-05T22:14:32 IST" name="tearDown" finished-at="2022-05-05T22:14:33 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:amazonTest.Homepage.homePageTest@6af93788]" started-at="2022-05-07T13:15:31 IST" name="tearDown" finished-at="2022-05-07T13:15:31 IST" duration-ms="215" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[--Test Execution has been completed.Closing the Application--]]>
